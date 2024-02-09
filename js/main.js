@@ -68,3 +68,18 @@ promotionBtn.addEventListener("click", () => {
   ? promotionEl.classList.add('hide')
   : promotionEl.classList.remove('hide');
 });
+
+
+// youtube floating
+function floatingObj(selector, delay, size) {
+  gsap.to(selector, delay, {
+    y: size,
+    repeat: -1,
+    yoyo: true,
+    ease: Power1.easeInOut,
+    delay: delay
+  });
+}
+floatingObj(".floating1", 1, 15);
+floatingObj(".floating2", 0.5, 15);
+floatingObj(".floating3", 1.5, 20);
