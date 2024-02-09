@@ -321,16 +321,16 @@ header .badges .badge {
   font-weight: 700;
   margin-right: 20px;
 }
-.notice .notice_line > .inner .inner__left .swiper {
+.notice .notice_line > .inner .inner__left > .swiper {
   height: 62px;
   flex-grow: 1;
 }
-.notice .notice_line > .inner .inner__left .swiper .swiper-slide {
+.notice .notice_line > .inner .inner__left > .swiper > .swiper-slide {
   height: 62px;
   display: flex;
   align-items: center;
 }
-.notice .notice_line > .inner .inner__left .swiper .swiper-slide a {
+.notice .notice_line > .inner .inner__left > .swiper > .swiper-slide a {
   color: #fff;
 }
 .notice .notice_line > .inner .inner__left .notice_line__more {
@@ -359,4 +359,126 @@ header .badges .badge {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.notice .promotion {
+  height: 693px;
+  background-color: #f6f5ef;
+  position: relative;
+  overflow: hidden;
+  transition: height 0.4s;
+}
+.notice .promotion > .swiper {
+  width: 2477px;
+  height: 553px;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  margin-left: -1238.5px;
+}
+.notice .promotion > .swiper > .swiper-wrapper .swiper-slide {
+  opacity: 0.5;
+  transition: opacity 1s;
+  position: relative;
+}
+.notice .promotion > .swiper > .swiper-wrapper .swiper-slide .btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.notice .promotion > .swiper > .swiper-wrapper .swiper-slide-active {
+  opacity: 1;
+}
+.notice .promotion > .swiper .swiper-pagination {
+  bottom: 48px;
+}
+.notice .promotion > .swiper .swiper-pagination-bullet {
+  background-color: transparent;
+  background-image: url("/images/promotion_slide_pager.png");
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  outline: none;
+}
+.notice .promotion > .swiper .swiper-pagination-bullet:last-child {
+  margin-right: 0;
+}
+.notice .promotion > .swiper .swiper-pagination-bullet-active {
+  background-image: url("/images/promotion_slide_pager_on.png");
+}
+.notice .promotion > .swiper .swiper-prev,
+.notice .promotion > .swiper .swiper-next {
+  width: 42px;
+  height: 42px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  position: absolute;
+  top: 300px;
+  z-index: 3;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+.notice .promotion > .swiper .swiper-prev {
+  left: 50%;
+  margin-left: -480px;
+}
+.notice .promotion > .swiper .swiper-next {
+  right: 50%;
+  margin-right: -480px;
+}
+.notice .promotion > .swiper .swiper-prev:hover,
+.notice .promotion > .swiper .swiper-next:hover {
+  background-color: #333;
+  color: #fff;
+}
+.notice .promotion.hide {
+  height: 0;
+}
+
+/* REWARDS */
+.rewards {
+  position: relative;
+}
+.rewards .bg-left {
+  width: 50%;
+  height: 100%;
+  background-color: #272727;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.rewards .bg-right {
+  width: 50%;
+  height: 100%;
+  background-color: #d5c798;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.rewards .inner {
+  background-image: url("/images/rewards.jpg");
+  height: 241px;
+}
+.rewards .inner > .btn-group {
+  position: absolute;
+  bottom: 24px;
+  right: 0;
+  width: 250px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.rewards .inner > .btn-group .sign-up {
+  margin-right: 10px;
+}
+.rewards .inner > .btn-group .sign-in {
+  width: 110px;
+}
+.rewards .inner > .btn-group .gift {
+  margin-top: 10px;
+  flex-grow: 1;
 }/*# sourceMappingURL=main.css.map */

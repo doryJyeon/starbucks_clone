@@ -33,8 +33,38 @@ fadeEls.forEach((fadeEl, index) => {
 });
 
 // Swiper
+// notice
 new Swiper(".notice_line .swiper", {
   direction: "vertical",
   autoplay: true,
   loop: true
+});
+// promotion
+new Swiper(".promotion .swiper", {
+  slidesPerView: 3,
+  spaceBetween: 10,
+  centeredSlides: true,
+  autoplay: {
+    delay: 5000
+  },
+  loop: true,
+  pagination: {
+    el: '.promotion .swiper-pagination',
+    clickable: true
+  },
+  navigation: {
+    pervEl: '.promotion .swiper-prev',
+    nextEl: '.promotion .swiper-next'
+  }
+});
+
+// promotion hide
+const promotionEl = document.querySelector(".promotion");
+const promotionBtn = document.querySelector(".toggle-ptomotion");
+let promotionToggle = false;
+promotionBtn.addEventListener("click", () => {
+  promotionToggle = !promotionToggle;
+  promotionToggle
+  ? promotionEl.classList.add('hide')
+  : promotionEl.classList.remove('hide');
 });
