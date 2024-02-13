@@ -520,21 +520,133 @@ header .badges .badge {
   width: 100%;
   height: 100%;
 }
-.youtube .inner {
+.youtube > .inner {
   height: 700px;
 }
-.youtube .inner .floating1 {
+.youtube > .inner .floating1 {
   position: absolute;
   top: 50px;
   left: 0;
 }
-.youtube .inner .floating2 {
+.youtube > .inner .floating2 {
   position: absolute;
   top: 350px;
   left: 150px;
 }
-.youtube .inner .floating3 {
+
+/* SEASON PRODUCT */
+.season_product {
+  background-image: url("/images/season_product_bg.jpg");
+}
+.season_product > .inner {
+  height: 400px;
+}
+.season_product > .inner .floating3 {
   position: absolute;
-  bottom: -200px;
+  top: -200px;
   right: 0;
+}
+.season_product > .inner .text-group {
+  position: absolute;
+  top: 110px;
+  right: 110px;
+}
+.season_product > .inner .text-group > .title {
+  margin-bottom: 10px;
+}
+.season_product > .inner .text-group > .description {
+  margin-bottom: 15px;
+}
+
+/* RESERVE COFFEE */
+.reserve_coffee {
+  background-image: url("/images/reserve_bg.jpg");
+}
+.reserve_coffee > .inner {
+  height: 400px;
+}
+.reserve_coffee > .inner .reserve_logo {
+  position: absolute;
+  top: 110px;
+  left: 0;
+}
+.reserve_coffee > .inner .text-group {
+  position: absolute;
+  top: 124px;
+  left: 208px;
+}
+.reserve_coffee > .inner .product {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* PICK YOUR FAVORITE */
+.pick_favorite {
+  background-image: url("/images/favorite_bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.pick_favorite > .inner {
+  padding: 110px 0;
+}
+.pick_favorite > .inner .text-group {
+  width: 362px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.pick_favorite > .inner .text-group .title {
+  margin-bottom: 40px;
+}
+.pick_favorite > .inner .text-group .description {
+  margin-bottom: 40px;
+}
+
+/* RESERVE STORE */
+.reserve_store {
+  background-image: url("/images/reserve_store_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.reserve_store > .inner {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reserve_store > .inner .medal {
+  width: 334px;
+  height: 334px;
+  perspective: 600px;
+}
+.reserve_store > .inner .medal .front, .reserve_store > .inner .medal .back {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: 0.8s;
+  position: absolute;
+}
+.reserve_store > .inner .medal .front {
+  transform: rotateY(0deg);
+}
+.reserve_store > .inner .medal .back {
+  transform: rotateY(180deg);
+}
+.reserve_store > .inner .medal .back > .btn {
+  position: absolute;
+  top: 240px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.reserve_store > .inner .medal:hover .front {
+  transform: rotateY(180deg);
+}
+.reserve_store > .inner .medal:hover .back {
+  transform: rotateY(0deg);
 }/*# sourceMappingURL=main.css.map */

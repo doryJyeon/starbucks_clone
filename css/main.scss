@@ -616,7 +616,7 @@ header {
     height: 100%;
   }
 
-  .inner {
+  >.inner {
     height: 700px;
 
     .floating1 {
@@ -630,11 +630,146 @@ header {
       top: 350px;
       left: 150px;
     }
+  }
+}
+
+/* SEASON PRODUCT */
+.season_product {
+  background-image: url("/images/season_product_bg.jpg");
+
+  >.inner {
+    height: 400px;
 
     .floating3 {
       position: absolute;
-      bottom: -200px;
+      top: -200px;
       right: 0;
+    }
+
+    .text-group {
+      position: absolute;
+      top: 110px;
+      right: 110px;
+
+      >.title {
+        margin-bottom: 10px;
+      }
+
+      >.description {
+        margin-bottom: 15px;
+      }
+
+    }
+  }
+}
+
+/* RESERVE COFFEE */
+.reserve_coffee {
+  background-image: url("/images/reserve_bg.jpg");
+
+  >.inner {
+    height: 400px;
+
+    .reserve_logo {
+      position: absolute;
+      top: 110px;
+      left: 0;
+    }
+
+    .text-group {
+      position: absolute;
+      top: 124px;
+      left: 208px;
+    }
+
+    .product {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+
+/* PICK YOUR FAVORITE */
+.pick_favorite {
+  background-image: url("/images/favorite_bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  >.inner {
+    padding: 110px 0;
+   
+    .text-group {
+      width: 362px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+
+      .title {
+        margin-bottom: 40px;
+      }
+
+      .description {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+/* RESERVE STORE */
+.reserve_store {
+  background-image: url("/images/reserve_store_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+
+  >.inner {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .medal {
+      width: 334px;
+      height: 334px;
+      perspective: 600px;
+
+      .front, .back {
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        transition: .8s;
+        position: absolute;
+      }
+
+      .front {
+        transform: rotateY(0deg);
+      }
+
+      .back {
+        transform: rotateY(180deg);
+
+        >.btn {
+          position: absolute;
+          top: 240px;
+          left: 0;
+          right: 0;
+          margin: auto;
+        }
+      }
+    }
+    .medal:hover {
+
+      .front {
+        transform: rotateY(180deg);
+      }
+
+      .back {
+        transform: rotateY(0deg);
+      }
     }
   }
 }
