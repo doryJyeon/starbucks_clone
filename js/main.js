@@ -13,14 +13,36 @@ searchInput.addEventListener("blur", () => {
   searchInput.setAttribute("placeholder", "");
 });
 
-//header hide
-const badgeBox = document.querySelector("header .badges");
+// heder showHide & floating icon showHide
+const badgeEl = document.querySelector('header .badges')
+const toTopEl = document.querySelector('#to-top')
 
-window.addEventListener("scroll",_.throttle(() => {
-  window.scrollY > 500
-    ? gsap.to(badgeBox, 0.4, { opacity: 0, display: "none" })
-    : gsap.to(badgeBox, 0.4, { opacity: 1, display: "block" });
+window.addEventListener('scroll', _.throttle(function () {
+  if (window.scrollY > 500) {
+    gsap.to(badgeEl, .6, {
+      opacity: 0,
+      display: 'none'
+    });
+    gsap.to(toTopEl, .2, {
+      x: 0
+    });
+  } else {
+    gsap.to(badgeEl, .6, {
+      opacity: 1,
+      display: 'block'
+    });
+    gsap.to(toTopEl, .2, {
+      x: 100
+    });
+  }
 }, 300));
+
+// scroll top
+toTopEl.addEventListener('click', function () {
+  gsap.to(window, .7, {
+    scrollTo: 0
+  })
+});
 
 //fade-in
 const fadeEls = document.querySelectorAll(".visual .fade-in");
@@ -57,6 +79,18 @@ new Swiper(".promotion .swiper", {
     nextEl: '.promotion .swiper-next'
   }
 });
+// awards
+new Swiper(".awards .swiper", {
+  autoplay: true,
+  loop: true,
+  spaceBetween: 30,
+  slidesPerView: 5,
+  navigation: {
+    pervEl: '.awards .swiper-prev',
+    nextEl: '.awards .swiper-next'
+  }
+});
+
 
 // promotion hide
 const promotionEl = document.querySelector(".promotion");
@@ -83,3 +117,19 @@ function floatingObj(selector, delay, size) {
 floatingObj(".floating1", 1, 15);
 floatingObj(".floating2", 0.5, 15);
 floatingObj(".floating3", 1.5, 20);
+
+// Scroll 
+const spyEls = document.querySelectorAll("section.scroll-spy");
+spyEls.forEach((spyEl) => {
+  new ScrollMagic
+  .Scene({
+    triggerElement: spyEl, 
+    triggerHook: .8
+  })
+  .setClassToggle(spyEl, "show")
+  .addTo(new ScrollMagic.Controller());
+});
+
+// this year 
+const thisYear = document.querySelector(".this-year");
+thisYear.textContent = new Date().getFullYear();
