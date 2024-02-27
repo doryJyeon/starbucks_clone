@@ -3,6 +3,7 @@ body {
   color: #333;
   line-height: 1.4;
   font-family: "Nanum Gothic", sans-serif;
+  min-width: 1100px;
 }
 
 img {
