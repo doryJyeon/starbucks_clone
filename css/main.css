@@ -1,7 +1,7 @@
 /* VISUAL */
 .visual {
   margin-top: 120px;
-  background-image: url("/images/visual_bg.jpg");
+  background-image: url("./../images/visual_bg.jpg");
   background-position: center;
 }
 .visual .inner {
@@ -130,12 +130,12 @@
   transition: height 0.4s;
 }
 .notice .promotion > .swiper {
-  width: 2477px;
+  width: calc(819px * 3 + 20px);
   height: 553px;
   position: absolute;
   top: 40px;
   left: 50%;
-  margin-left: -1238.5px;
+  margin-left: calc((819px * 3 + 20px) / -2);
 }
 .notice .promotion > .swiper > .swiper-wrapper .swiper-slide {
   opacity: 0.5;
@@ -157,7 +157,7 @@
 }
 .notice .promotion > .swiper-btn .swiper-pagination-bullet {
   background-color: transparent;
-  background-image: url("/images/promotion_slide_pager.png");
+  background-image: url("./../images/promotion_slide_pager.png");
   width: 12px;
   height: 12px;
   margin-right: 6px;
@@ -167,7 +167,7 @@
   margin-right: 0;
 }
 .notice .promotion > .swiper-btn .swiper-pagination-bullet-active {
-  background-image: url("/images/promotion_slide_pager_on.png");
+  background-image: url("./../images/promotion_slide_pager_on.png");
 }
 .notice .promotion > .swiper-btn .swiper-prev,
 .notice .promotion > .swiper-btn .swiper-next {
@@ -223,7 +223,7 @@
   right: 0;
 }
 .rewards .inner {
-  background-image: url("/images/rewards.jpg");
+  background-image: url("./../images/rewards.jpg");
   height: 241px;
 }
 .rewards .inner > .btn-group {
@@ -256,9 +256,9 @@
   width: 1920px;
   position: absolute;
   left: 50%;
-  margin-left: -960px;
+  margin-left: calc(1920px / -2);
   top: 50%;
-  margin-top: -540px;
+  margin-top: calc(1920px * 9 / 16 / -2);
 }
 .youtube .youtube__area #player {
   width: 100%;
@@ -275,7 +275,7 @@
   padding-top: 56.25%;
 }
 .youtube .youtube__cover {
-  background-image: url("/images/video_cover_pattern.png");
+  background-image: url("./../images/video_cover_pattern.png");
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   top: 0;
@@ -299,7 +299,7 @@
 
 /* SEASON PRODUCT */
 .season_product {
-  background-image: url("/images/season_product_bg.jpg");
+  background-image: url("./../images/season_product_bg.jpg");
 }
 .season_product > .inner {
   height: 400px;
@@ -323,7 +323,7 @@
 
 /* RESERVE COFFEE */
 .reserve_coffee {
-  background-image: url("/images/reserve_bg.jpg");
+  background-image: url("./../images/reserve_bg.jpg");
 }
 .reserve_coffee > .inner {
   height: 400px;
@@ -346,7 +346,7 @@
 
 /* PICK YOUR FAVORITE */
 .pick_favorite {
-  background-image: url("/images/favorite_bg.jpg");
+  background-image: url("./../images/favorite_bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -370,7 +370,7 @@
 
 /* RESERVE STORE */
 .reserve_store {
-  background-image: url("/images/reserve_store_bg.jpg");
+  background-image: url("./../images/reserve_store_bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -416,7 +416,7 @@
 
 /* FIND THE STORE */
 .find_store {
-  background-image: url("/images/find_store_bg.jpg");
+  background-image: url("./../images/find_store_bg.jpg");
 }
 .find_store > .inner {
   height: 400px;

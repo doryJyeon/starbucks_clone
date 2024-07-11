@@ -1,6 +1,6 @@
 /* SIGN IN */
 .signin {
-  background-image: url("/images/signin_bg.jpg");
+  background-image: url("./../images/signin_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -76,4 +76,4 @@
 }
 .signin .signin__card .actions a:hover {
   text-decoration: underline;
-}/*# sourceMappingURL=signin.css.map */
+}

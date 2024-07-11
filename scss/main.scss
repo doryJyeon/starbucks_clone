@@ -1,7 +1,7 @@
 /* VISUAL */
 .visual {
   margin-top: 120px;
-  background-image: url("/images/visual_bg.jpg");
+  background-image: url("./../images/visual_bg.jpg");
   background-position: center;
 
   .inner {
@@ -189,7 +189,7 @@
 
       .swiper-pagination-bullet {
         background-color: transparent;
-        background-image: url("/images/promotion_slide_pager.png");
+        background-image: url("./../images/promotion_slide_pager.png");
         width: 12px;
         height: 12px;
         margin-right: 6px;
@@ -201,7 +201,7 @@
       }
 
       .swiper-pagination-bullet-active {
-        background-image: url("/images/promotion_slide_pager_on.png");
+        background-image: url("./../images/promotion_slide_pager_on.png");
       }
 
       .swiper-prev,
@@ -267,7 +267,7 @@
   }
 
   .inner {
-    background-image: url("/images/rewards.jpg");
+    background-image: url("./../images/rewards.jpg");
     height: 241px;
 
     >.btn-group {
@@ -327,7 +327,7 @@
   }
 
   .youtube__cover {
-    background-image: url("/images/video_cover_pattern.png");
+    background-image: url("./../images/video_cover_pattern.png");
     background-color: rgba(0, 0, 0, .3);
     position: absolute;
     top: 0;
@@ -355,7 +355,7 @@
 
 /* SEASON PRODUCT */
 .season_product {
-  background-image: url("/images/season_product_bg.jpg");
+  background-image: url("./../images/season_product_bg.jpg");
 
   >.inner {
     height: 400px;
@@ -385,7 +385,7 @@
 
 /* RESERVE COFFEE */
 .reserve_coffee {
-  background-image: url("/images/reserve_bg.jpg");
+  background-image: url("./../images/reserve_bg.jpg");
 
   >.inner {
     height: 400px;
@@ -412,7 +412,7 @@
 
 /* PICK YOUR FAVORITE */
 .pick_favorite {
-  background-image: url("/images/favorite_bg.jpg");
+  background-image: url("./../images/favorite_bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -440,7 +440,7 @@
 
 /* RESERVE STORE */
 .reserve_store {
-  background-image: url("/images/reserve_store_bg.jpg");
+  background-image: url("./../images/reserve_store_bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -497,7 +497,7 @@
 /* FIND THE STORE */
 
 .find_store {
-  background-image: url("/images/find_store_bg.jpg");
+  background-image: url("./../images/find_store_bg.jpg");
 
   >.inner {
     height: 400px;
