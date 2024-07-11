@@ -130,12 +130,12 @@
   transition: height 0.4s;
 }
 .notice .promotion > .swiper {
-  width: 2477px;
+  width: calc(819px * 3 + 20px);
   height: 553px;
   position: absolute;
   top: 40px;
   left: 50%;
-  margin-left: -1238.5px;
+  margin-left: calc((819px * 3 + 20px) / -2);
 }
 .notice .promotion > .swiper > .swiper-wrapper .swiper-slide {
   opacity: 0.5;
@@ -256,9 +256,9 @@
   width: 1920px;
   position: absolute;
   left: 50%;
-  margin-left: -960px;
+  margin-left: calc(1920px / -2);
   top: 50%;
-  margin-top: -540px;
+  margin-top: calc(1920px * 9 / 16 / -2);
 }
 .youtube .youtube__area #player {
   width: 100%;

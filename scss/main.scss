@@ -97,17 +97,17 @@
           margin-right: 20px;
         }
 
-        >.swiper {
+        > .swiper {
           height: 62px;
           flex-grow: 1;
 
-          >.swiper-slide {
+          > .swiper-wrapper > .swiper-slide {
             height: 62px;
             display: flex;
             align-items: center;
 
             a {
-              color: #fff;
+              color: #fff !important;
             }
           }
         }
